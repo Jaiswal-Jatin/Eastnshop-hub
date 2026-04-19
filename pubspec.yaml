@@ -1,0 +1,110 @@
+name: eastnshop_hub
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+17
+
+environment:
+  sdk: ^3.10.7
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.15.2
+  firebase_messaging: ^15.2.9
+  flutter_local_notifications: ^19.4.2
+  get: ^4.6.5
+  http: ^1.6.0
+  shared_preferences: ^2.5.3
+  connectivity_plus: ^6.1.3
+  smooth_page_indicator: ^1.2.1
+  file_picker: ^10.2.0
+  data_table_2: ^2.6.0
+
+  flutter_map: ^6.1.0
+
+  geolocator: ^10.0.0
+  geocoding: ^3.0.0
+  latlong2: ^0.9.0
+
+  image_picker: ^1.0.7
+  permission_handler: ^11.3.1
+  intl: ^0.19.0
+  url_launcher: ^6.3.1
+  share_plus: ^10.0.2
+  dropdown_button2: ^2.3.9
+  fan_carousel_image_slider: ^1.3.0
+  carousel_slider: ^5.1.1
+  razorpay_flutter: ^1.3.7
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/Shopkeeper_logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/Shopkeeper_logo.png"
+    background_color: "#000000"
+    theme_color: "#EB1C23"
+  windows:
+    generate: true
+    image_path: "assets/Shopkeeper_logo.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/Shopkeeper_logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
